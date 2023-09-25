@@ -1,0 +1,48 @@
+﻿body {
+    background-image: url('Images/Rain-Backgroung.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+p {
+    background-color: black;
+    color: white;
+    margin: 100px;
+}
+
+h5 {
+    background-color: black;
+    color: white;
+    margin: 100px;
+    width: fit-content;
+    font-size: 1.5em;
+}
+
+a {
+    background-color: black;
+    color: white;
+    margin: 100px;
+    width: 50px;
+    font-size: 1.5em;
+}
+
+h2 {
+    background-color: black;
+    color: white;
+    margin: 20px 0;
+    width: fit-content;
+    font-size: 1.5em;
+}
+
+ul {
+    background-color: black;
+    color: white;
+    margin: 20px;
+    width: fit-content;
+    font-size: 1.5em;
+}
+
+#CoverArt {
+    border-radius: 30%; /* Set border-radius to 50% for a circle effect */
+}
