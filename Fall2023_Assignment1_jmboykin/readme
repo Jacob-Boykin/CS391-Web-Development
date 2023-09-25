@@ -1,0 +1,42 @@
+Overview
+Create a webpage to showcase a movie or TV show you like.
+Setup
+Create a public GitHub repository and add the project to the repository.
+Using Visual Studio 2022, create a new project of type "ASP.NET Core Web App".
+Name the project SemesterYear-Assignment1-YourMyBamaUsername (example: Fall2023-Assignment1-mdmay1)
+Select Target Framework as the latest version.
+Open the Program.cs file in your project.
+Add in the line app.UseDefaultFiles(); BEFORE the line app.UseStaticFiles(); as seen below:
+app.UseHttpsRedirection();
+app.UseDefaultFiles();
+app.UseStaticFiles();
+NOTE: The above steps 5 & 6 are a hack to dumb-down Visual Studio to just handle HTML files. Later in the semester we won't have to do this sort of things as we will use the full power of VS.
+Add a new HTML page called index.html to the wwwroot folder (Right click wwwroot folder -> Add -> New Item... -> HTML Page) and add the HTML/CSS below to that file.
+Requirements
+Find a movie or TV series that you are a fan of and employ the following HTML/CSS features:
+A background color for the entire page of your choosing.
+A div containing:
+An h1 element with an ID of "Title".
+An img element related to the media with and ID of 'CoverArt' (Cover art is good here). This image should be circular/have rounded edges.
+An h5 element with an ID of 'Rating'. This should be the rating from IMDB out of 10.
+An iframe embedding a youtube video of a trailer of the media with an ID of "Trailer". This can be acquired by right clicking on the video, and copying the embed.
+An <a> element linking to the IMDB page.
+The summary text from IMDB in a Paragraph element with an ID of "Summary".
+Unordered list of three to five actors. This unorder list element should have an ID of "Actors".
+All content on the page should be centered.
+Color all text on the page in a contrasting color to the one you picked for the background.
+Use different files for your HTML, CSS, and JS.
+It is best to take this little pieces at a time, step by step, as not to get confused by too many things at once. W3 Schools is an amazing resource, and has examples on everything above if you get stuck.
+Feel free to get creative and add additional features after base requirements have been met.
+Publishing the app is a key requirement of the assignment.
+Publishing
+Build > Publish to Azure
+Sign into your Azure account if needed
+New Azure App Service
+App Service Name: SemesterYear-Assignment1-YourMyBamaUsername
+Subscription: Azure for Students
+Resource Group: SemesterYear-Assignment1-YourMyBamaUsername-ResourceGroup
+Service Plan Name: SemesterYear-Assignment1-YourMyBamaUsername-Plan
+Region: Central US (or another nearby location)
+Pricing: F1 - Free
+Publish
